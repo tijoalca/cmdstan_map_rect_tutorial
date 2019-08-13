@@ -6,7 +6,7 @@ functions {
     real lp = binomial_logit_lpmf( y | m , beta[1] + to_vector(xr) * beta[2] );
     return [lp]';
   }
-} 
+}
 data {
   int N;
   int n_redcards[N];
